@@ -4,7 +4,7 @@ const ArtistInfo = () => {
   return (
     <div>
         <div>
-            <img src={prop}/>
+            <img src={props.song}/>
         </div>
     </div>
   )

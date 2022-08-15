@@ -1,5 +1,6 @@
-import React, {useState} from 'react';
-import Control from './Control.js';
+import React, {useState} from 'react'
+import Control from './Control.js'
+import ArtistInfo from './ArtistInfo.js'
 
 const Music = ( { songs } ) => {
     
@@ -32,6 +33,8 @@ const Music = ( { songs } ) => {
             <h1>Music App</h1>
             <img src={currentSong?.picture} alt="picture of song"/> 
             <link href={currentSong?.file}> {currentSong?.musicTitle} </link>
+            {/* Where is this props coming from? */}
+            <ArtistInfo id={props.id}/>
             <Control isPlaying={isPlaying} moveBackwards={moveBackwards} handleShuffle={handleShuffle} />
             
         </div>

@@ -3,7 +3,9 @@ import React from 'react'
 const ArtistInfo = () => {
   return (
     <div>
-        div
+        <div>
+            <img src={prop}/>
+        </div>
     </div>
   )
 }

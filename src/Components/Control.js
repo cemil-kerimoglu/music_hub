@@ -4,7 +4,7 @@ import {faPlay, faPause, faForward, faBackward} from "@fortawesome/free-solid-sv
 // import Audio from 'ts-audio';
 // import Lazarus from './music/Lazarus.mp3';
 
-const Control = (props) => {
+const Control = (props) =>{
 
   const [isPlaying, setIsplaying] = useState(false);
   const [picture, setPicture] = useState();
@@ -20,23 +20,9 @@ const Control = (props) => {
     !isPlaying ? audio.current.play() : audio.current.pause();
   }
 
-  /*
-  const audio = Audio({
-    file: Lazarus
-  })
-
-  const play = () => {
-    audio.play()
-  }
-
-    const pause = () => {
-    audio.pause()
-  }
-  */
-
   return (
     <div className="music-player-controls">
-        <img src={`/Images/${picture}`} />
+        {/*<img src={`/Images/${picture}`} /> */}
         {console.log(picture)}
         <button className="shuffle-btn" onClick={props.moveBackwards}> 
             <FontAwesomeIcon icon={faBackward} />

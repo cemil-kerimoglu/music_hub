@@ -32,8 +32,8 @@ console.log("test",typeof currentSong?.picture)
         <div>
             <h1>Music App</h1>
             {console.log(currentSong.picture)}
-            <img src={`./Images/${currentSong.picture}`} alt={currentSong.picture} /> 
-            <a href={currentSong.file}> {currentSong.musicTitle} </a>
+            <img src={`./Images/${currentSong.picture}`} alt={currentSong.picture} width="250" height="300" />
+            {/*<a href={currentSong.file}> {currentSong.musicTitle} </a>*/}
             {/* Where is this props coming from? */}
             {/* <ArtistInfo id={songs[(songHistory.length- 1)].id} picture_src={}/> */}
             <Control songs={songs} moveBackwards={moveBackwards} handleShuffle={handleShuffle} />

@@ -36,7 +36,7 @@ h1 {
   
 
 
-.music-player-controls{;
+.music-player-controls{
   display: flex;
   align-items: center;
   justify-content: center;

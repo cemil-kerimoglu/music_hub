@@ -1,22 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
+import Music from './Components/Music';
 
-function App() {
+const App = () => {
+
+  const songArray = [{
+    id: 1,
+    picture: String,
+    musicTitle: 'Beyonce - Halo',
+    file: String
+  },
+  {
+    id: 2,
+    picture: String,
+    musicTitle: 'U2 - Beautiful Day',
+    file: String
+  },
+  {
+    id: 3
+    picture: String,
+    musicTitle: 'The Corrs - Summer Sunshine',
+    file: String
+  },
+  {
+    id: 4
+    picture: String,
+    musicTitle: 'Gin Blossoms - Found Out About You',
+    file: String
+  },
+  {
+    id: 4
+    picture: String,
+    musicTitle: 'The Killers - Mr. Brightside',
+    file: String
+  }
+];
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <Music songs={songArray} />
       </header>
     </div>
   );
